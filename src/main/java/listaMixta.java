@@ -25,19 +25,26 @@ class ListaMixta {
         lista.agregarElemento("Matematicas");
       //  lista.imprimirLista();
 
-        String[] list_of_strings = {"messageQrTransportCriteria15", "messageQrTransportCriteria1819", "messageQrTransportCriteria2021", "messageQrTransportCriteria2223", "messageQrTransportCriteria2425", "messageQrTransportCriteria29", "messageQrTransportCriteria30", "messageQrTransportCriteria31", "messageQrTransportCriteria32", "messageQrTransportCriteria33", "messageQrTransportCriteria38", "messageQrTransportCriteria3940", "messageQrTransportCriteria41", "messageQrTransportCriteria4243", "messageQrTransportCriteria44", "messageQrTransportCriteria45", "messageQrTransportCriteria4647", "messageQrTransportCriteria48", "messageQrTransportCriteria63", "messageQrTransportCriteria64", "messageQrTransportCriteria65", "messageQrTransportCriteria6667", "messageQrTransportCriteria6869", "messageQrTransportCriteria7071", "messageQrTransportCriteria7273", "messageQrTransportCriteria7475", "messageQrTransportCriteria7677", "messageQrTransportCriteria8081", "messageQrTransportCriteria98", "messageQrTransportCriteria99", "messageQrTransportCriteria100", "messageQrTransportCriteria101102", "messageQrTransportCriteria103", "paramQrTransportFlagAddtionalTicket", "paramQrTransportFlagAllowTravelOnCredit", "paramQrTransportMaxNumberTripsPending", "paramQrTransportMinIntegrationCharge", "paramQrTransportMaxIntegratedQr"};
+        //String[] list_of_strings = {"messageQrTransportCriteria15", "messageQrTransportCriteria1819", "messageQrTransportCriteria2021", "messageQrTransportCriteria2223", "messageQrTransportCriteria2425", "messageQrTransportCriteria29", "messageQrTransportCriteria30", "messageQrTransportCriteria31", "messageQrTransportCriteria32", "messageQrTransportCriteria33", "messageQrTransportCriteria38", "messageQrTransportCriteria3940", "messageQrTransportCriteria41", "messageQrTransportCriteria4243", "messageQrTransportCriteria44", "messageQrTransportCriteria45", "messageQrTransportCriteria4647", "messageQrTransportCriteria48", "messageQrTransportCriteria63", "messageQrTransportCriteria64", "messageQrTransportCriteria65", "messageQrTransportCriteria6667", "messageQrTransportCriteria6869", "messageQrTransportCriteria7071", "messageQrTransportCriteria7273", "messageQrTransportCriteria7475", "messageQrTransportCriteria7677", "messageQrTransportCriteria8081", "messageQrTransportCriteria98", "messageQrTransportCriteria99", "messageQrTransportCriteria100", "messageQrTransportCriteria101102", "messageQrTransportCriteria103", "paramQrTransportFlagAddtionalTicket", "paramQrTransportFlagAllowTravelOnCredit", "paramQrTransportMaxNumberTripsPending", "paramQrTransportMinIntegrationCharge", "paramQrTransportMaxIntegratedQr"};
+        String[] list_of_strings = {"msgQrTransport001","msgQrTransport002","msgQrTransport003","msgQrTransport004","msgQrTransport005","msgQrTransport006","msgQrTransport007","msgQrTransport008","msgQrTransport009","msgQrTransport010","msgQrTransport011","msgQrTransport012","msgQrTransport013","msgQrTransport014","msgQrTransport015"};
 
         for(int i=0; i<list_of_strings.length; i++){
             String originalString = list_of_strings[i];
             String firstLetter = originalString.substring(0, 1).toUpperCase();
             String restLetters = originalString.substring(1);
-            list_of_strings[i] = ".with"+ firstLetter + restLetters + "(verifyObjectMapDB(mapParametersDB,\"" + originalString + "\"))"
+            list_of_strings[i] = "public RunParametersConfigBuilder with"+ firstLetter + restLetters + "(String " + originalString + ") {" +
+                    "this." + originalString + " = " + originalString + ";" +
+                    "return this;" +
+                    "}"
+
            ;
         }
 
         for(int i=0; i<list_of_strings.length; i++){
             System.out.println(list_of_strings[i]);
         }
+
+        //comemnt anything fcfcfc
 
 
     }

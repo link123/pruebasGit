@@ -2,5 +2,7 @@ Persona.java
  Persona
 ListFormat.java
  ListFormat
+BankData.java
+ BankData
 listaMixta.java
  ListaMixta
