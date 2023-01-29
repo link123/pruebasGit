@@ -1,4 +1,6 @@
 Persona.java
  Persona
+ListFormat.java
+ ListFormat
 listaMixta.java
  ListaMixta
